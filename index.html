@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Titrimetri - Kelompok 10</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #e9ecef;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: #fafafa;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        .formula-box {
+            background-color: var(--secondary-color);
+            border-left: 5px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: var(--accent-color);
+        }
+        .bagan-kerja {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sistem Informasi Titrimetri</h1>
+        <p>E-Learning Praktis Kimia Analisis & Titrimetri | Kelompok 10</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#jenis">Jenis Titrasi</a></li>
+            <li><a href="#alat-bahan">Alat & Bahan</a></li>
+            <li><a href="#rumus">Rumus Perhitungan</a></li>
+            <li><a href="#reaksi">Reaksi Kimia</a></li>
+            <li><a href="#bagan">Bagan Kerja</a></li>
+            <li><a href="#analisis">Analisis Hasil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Sistem Informasi Titrimetri ini dikembangkan untuk memudahkan pemahaman mahasiswa mengenai metode analisis kuantitatif titrimetri berdasarkan kurikulum praktikum teknik analisis laboratorium kimia.</p>
+        </section>
+
+        <section id="jenis">
+            <h2>Jenis-Jenis Titrasi</h2>
+            <p>Berdasarkan sifat reaksi kimianya, titrimetri terbagi menjadi beberapa jenis utama, di antaranya:</p>
+            <ul>
+                <li><strong>Asidimetri:</strong> Titrasi terhadap larutan basa bebas atau garam terhidrolisis menggunakan larutan standar asam kuat.</li>
+                <li><strong>Alkalimetri:</strong> Titrasi terhadap larutan asam bebas atau garam terhidrolisis menggunakan larutan standar basa kuat.</li>
+                <li><strong>Permanganometri:</strong> Titrasi redoks yang memanfaatkan kalium permanganat (KMnO₄) sebagai oksidator kuat (sekaligus bertindak sebagai auto-indikator).</li>
+                <li><strong>Iodometri:</strong> Titrasi redoks secara tidak langsung yang melibatkan pembebasan iodium (I₂) dan dititar menggunakan larutan standar natrium tiosulfat.</li>
+            </ul>
+        </section>
+
+        <section id="alat-bahan">
+            <h2>Peralatan & Bahan Standar</h2>
+            <h3>Peralatan Utama Laboratorium:</h3>
+            <ul>
+                <li>Buret makro, statip, dan klem</li>
+                <li>Alas titar dan Labu Erlenmeyer 250 mL</li>
+                <li>Pipet volumetri (25 mL), Pipet tetes, dan Bulb (filler)</li>
+                <li>Labu takar (100 mL / 250 mL), Gelas piala, dan Corong</li>
+            </ul>
+            <h3>Bahan / Pereaksi Utama:</h3>
+            <ul>
+                <li><strong>Baku Primer:</strong> Asam Oksalat, Boraks (Na₂B₄O₇.10H₂O)</li>
+                <li><strong>Baku Sekunder / Titran:</strong> NaOH, HCl, KMnO₄</li>
+                <li><strong>Indikator pH:</strong> Phenolphthalein (PP), Merah Metil (MM), Sindur Metil (SM)</li>
+            </ul>
+        </section>
+
+        <section id="rumus">
+            <h2>Rumus Perhitungan Titrimetri</h2>
+            <p>Prinsip dasar perhitungan kuantitatif titrasi didasarkan pada kesetaraan jumlah miliekuivalen (mgrek):</p>
+            <div class="formula-box">
+                mgrek titrat = mgrek titrant <br>
+                (V x N) titrat = (V x N) titrant
+            </div>
+            
+            <h3>1. Rumus Standardisasi Larutan Sekunder:</h3>
+            <div class="formula-box">
+                N Larutan Sekunder = mg Baku Primer / (Fp x Volume Titran x BE Baku Primer)
+            </div>
+            <p><em>Keterangan: Fp = Faktor pengali pengenceran (misal 100/25); BE = Bobot Ekuivalen.</em></p>
+
+            <h3>2. Rumus Penetapan Kadar Sampel (Contoh Asam Asetat):</h3>
+            <div class="formula-box">
+                % (b/v) Kadar = [ (V_titran x N_titran x BE_sampel) x 10⁻³ x Fp x 100% ] / V_titrat
+            </div>
+        </section>
+
+        <section id="reaksi">
+            <h2>Persamaan Reaksi Kimia Utama</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Praktikum</th>
+                        <th>Persamaan Reaksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standardisasi NaOH dengan Asam Oksalat</strong></td>
+                        <td>H₂C₂O₄ + 2NaOH → Na₂C₂O₄ + 2H₂O</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Standardisasi HCl dengan Boraks</strong></td>
+                        <td>Na₂B₄O₇ + 2HCl + 5H₂O → 2NaCl + 4H₃BO₃</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Penetapan Kadar Cuka (Asam Asetat)</strong></td>
+                        <td>CH₃COOH + NaOH → CH₃COONa + H₂O</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Standardisasi KMnO₄ (Permanganometri)</strong></td>
+                        <td>2MnO₄⁻ + 5H₂C₂O₄ + 6H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="bagan">
+            <h2>Bagan Kerja (Prosedur Pengujian)</h2>
+            <p>Berikut adalah contoh logika alur kerja laboratorium untuk standardisasi larutan baku:</p>
+            
+            <div class="bagan-kerja">
+                <strong>Tahap 1: Preparasi Larutan Baku Primer</strong><br>
+                Timbang teliti bahan baku primer (misal: ±630 mg asam oksalat) menggunakan kaca arloji → Larutkan dalam labu takar 100 mL → Tepatkan dengan air suling hingga tanda batas → Homogenkan.
+            </div>
+            
+            <div class="bagan-kerja">
+                <strong>Tahap 2: Proses Penitaran (Titrasi)</strong><br>
+                Pipet 25 mL larutan baku primer menggunakan pipet volumetri → Masukkan ke Erlenmeyer 250 mL → Tambahkan 2-3 tetes indikator yang sesuai (misal: PP) → Isi buret dengan titran → Titar perlahan hingga terjadi perubahan warna konstan (Titik Akhir Titrasi).
+            </div>
+
+            <div class="bagan-kerja">
+                <strong>Tahap 3: Pencatatan Data</strong><br>
+                Catat volume akhir titran pada buret → Lakukan pengujian secara duplo/triplo untuk menjaga presisi metode.
+            </div>
+        </section>
+
+        <section id="analisis">
+            <h2>Analisis Hasil & Pengendalian Mutu</h2>
+            <p>Untuk memastikan keabsahan data hasil pengujian titrimetri di laboratorium, kriteria berikut wajib dipenuhi:</p>
+            <ul>
+                <li><strong>Presisi Pengujian (Duplo/Triplo):</strong> Menggunakan perhitungan nilai RPD (Relative Percent Difference). Kriteria keberterimaan yang ideal adalah <strong>RPD &lt; 10%</strong>.</li>
+                <li><strong>Estimasi Ketidakpastian (Uncertainty):</strong> Mengidentifikasi variabel ketidakpastian baku melalui pemodelan <em>Fishbone Diagram</em> (tulang ikan) yang mencakup faktor akurasi neraca analitik, toleransi volume buret, ekspansi termal cairan, serta kemurnian bahan kimia.</li>
+                <li><strong>Kualitas Pereaksi:</strong> Seluruh pengujian wajib menggunakan bahan kimia dengan derajat kemurnian tinggi atau Pro Analisis (p.a).</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kelompok 10 - Sistem Informasi Titrimetri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
